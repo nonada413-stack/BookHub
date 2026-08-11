@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Hub - Tickets</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Booking Message -->
+
+    <div id="bookingMessage">
+        BOOKED
+    </div>
+    <!-- QR Code Popup -->
+
+<div id="qrPopup">
+
+    <div class="qr-box">
+
+        <button class="close-qr" onclick="closeQR()">×</button>
+
+        <h2>Your Ticket</h2>
+
+        <p id="qrTime"></p>
+
+        <div id="qrcode"></div>
+
+        <p class="qr-note">
+            Show this QR code when entering the library.
+        </p>
+
+    </div>
+
+</div>
+
+
+    <!-- Background Decorations -->
+
+    <div class="decorations">
+
+        <span class="icon icon1">📖</span>
+        <span class="icon icon2">✎</span>
+        <span class="icon icon3">▱</span>
+        <span class="icon icon4">📚</span>
+        <span class="icon icon5">✦</span>
+
+        <span class="icon icon6">✎</span>
+        <span class="icon icon7">📖</span>
+        <span class="icon icon8">📚</span>
+        <span class="icon icon9">✦</span>
+        <span class="icon icon10">▱</span>
+
+        <span class="icon icon11">📖</span>
+        <span class="icon icon12">✎</span>
+        <span class="icon icon13">📚</span>
+        <span class="icon icon14">✦</span>
+        <span class="icon icon15">📖</span>
+
+    </div>
+
+
+    <!-- Tickets Page -->
+
+    <div class="tickets-page">
+
+        <h1>Book Your Ticket</h1>
+
+        <p class="tickets-subtitle">
+            Choose your preferred time
+        </p>
+
+
+        <div class="ticket-container">
+
+
+            <!-- First Time -->
+
+            <div class="ticket-card">
+
+                <h2>9:00 AM - 12:00 PM</h2>
+
+                <p>
+                    Tickets Available:
+                    <span id="tickets1">30</span>
+                </p>
+
+                <button onclick="bookTicket(1)">
+                    BOOK NOW
+                </button>
+
+            </div>
+
+
+            <!-- Second Time -->
+
+            <div class="ticket-card">
+
+                <h2>12:00 PM - 3:00 PM</h2>
+
+                <p>
+                    Tickets Available:
+                    <span id="tickets2">30</span>
+                </p>
+
+                <button onclick="bookTicket(2)">
+                    BOOK NOW
+                </button>
+
+            </div>
+
+
+            <!-- Third Time -->
+
+            <div class="ticket-card">
+
+                <h2>3:00 PM - 6:00 PM</h2>
+
+                <p>
+                    Tickets Available:
+                    <span id="tickets3">30</span>
+                </p>
+
+                <button onclick="bookTicket(3)">
+                    BOOK NOW
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

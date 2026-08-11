@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #2f3e35;
+}
+
+/* Home Page */
+
+.home {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 70px;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.home button {
+    padding: 15px 40px;
+
+    font-size: 18px;
+
+    background-color: #2f3e35;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.home button:hover {
+    transform: scale(1.05);
+}
+
+
+/* Library Page */
+
+.library {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.library h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.library p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+/* Main Buttons */
+
+.options {
+    display: flex;
+    gap: 25px;
+}
+
+.options button {
+    width: 240px;
+    height: 145px;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    background-color: white;
+    color: #2f3e35;
+
+    border: 2px solid #2f3e35;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.options button:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Background Decorations */
+
+.decorations {
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+
+    color: #d6d6d6;
+
+    font-size: 35px;
+
+    opacity: 0.6;
+}
+
+.icon1 {
+    top: 12%;
+    left: 10%;
+
+    transform: rotate(-15deg);
+}
+
+.icon2 {
+    top: 20%;
+    right: 12%;
+
+    transform: rotate(20deg);
+}
+
+.icon3 {
+    bottom: 18%;
+    left: 15%;
+
+    transform: rotate(10deg);
+}
+
+.icon4 {
+    bottom: 12%;
+    right: 10%;
+
+    transform: rotate(-12deg);
+}
+
+.icon5 {
+    top: 35%;
+    left: 5%;
+
+    font-size: 25px;
+}
+
+.icon6 {
+    bottom: 35%;
+    right: 6%;
+
+    transform: rotate(-25deg);
+}
+
+.icon7 {
+    top: 8%;
+    right: 35%;
+
+    font-size: 28px;
+
+    transform: rotate(10deg);
+}
+.icon8 {
+    top: 15%;
+    left: 28%;
+    transform: rotate(12deg);
+}
+
+.icon9 {
+    top: 28%;
+    right: 25%;
+    font-size: 24px;
+    transform: rotate(-15deg);
+}
+
+.icon10 {
+    top: 50%;
+    left: 10%;
+    font-size: 28px;
+    transform: rotate(20deg);
+}
+
+.icon11 {
+    bottom: 30%;
+    left: 28%;
+    font-size: 30px;
+    transform: rotate(-10deg);
+}
+
+.icon12 {
+    bottom: 20%;
+    right: 28%;
+    font-size: 27px;
+    transform: rotate(15deg);
+}
+
+.icon13 {
+    top: 65%;
+    right: 12%;
+    font-size: 32px;
+    transform: rotate(-15deg);
+}
+
+.icon14 {
+    bottom: 8%;
+    left: 40%;
+    font-size: 23px;
+    transform: rotate(10deg);
+}
+
+.icon15 {
+    top: 40%;
+    right: 5%;
+    font-size: 30px;
+    transform: rotate(-20deg);
+}
+
+/* Tickets Page */
+
+.tickets-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.tickets-page h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.tickets-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+.ticket-container {
+    display: flex;
+    gap: 25px;
+
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.ticket-card {
+    width: 280px;
+    min-height: 250px;
+
+    background-color: white;
+
+    border: 2px solid #d6d6d6;
+    border-radius: 25px;
+
+    padding: 30px 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.ticket-card h2 {
+    font-size: 22px;
+
+    color: #2f3e35;
+
+    margin-bottom: 30px;
+}
+
+
+.ticket-card p {
+    font-size: 18px;
+
+    color: #555;
+
+    margin-bottom: auto;
+}
+
+
+.ticket-card p span {
+    color: #2f3e35;
+
+    font-weight: bold;
+}
+
+
+.ticket-card button {
+    width: 100%;
+    height: 42px;
+
+    margin-top: 25px;
+
+    background-color: white;
+
+    color: #2f7d5b;
+
+    border: 2px solid #2f7d5b;
+
+    border-radius: 20px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.ticket-card button:hover {
+    background-color: #2f7d5b;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* Fully Booked */
+
+.ticket-card button:disabled {
+    color: #999;
+
+    border-color: #ccc;
+
+    background-color: #f5f5f5;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* Booking Message */
+
+#bookingMessage {
+    position: fixed;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #2f7d5b;
+
+    color: white;
+
+    padding: 12px 35px;
+
+    border-radius: 25px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    z-index: 100;
+
+    transition: opacity 0.3s;
+}
+
+
+#bookingMessage.show {
+    opacity: 1;
+}
+/* QR Code Popup */
+
+#qrPopup {
+    position: fixed;
+
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.25);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 200;
+}
+
+
+#qrPopup.show {
+    display: flex;
+}
+
+
+.qr-box {
+    position: relative;
+
+    width: 350px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    padding: 35px 30px 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.qr-box h2 {
+    color: #2f3e35;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+#qrTime {
+    color: #555;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+
+#qrcode {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 10px auto 20px;
+}
+
+
+#qrcode img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.qr-note {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* Close Button */
+
+.close-qr {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 28px;
+
+    line-height: 25px;
+
+    cursor: pointer;
+}
+
+
+.close-qr:hover {
+    color: #2f3e35;
+}
+/* Available Books Page */
+
+.books-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.books-page h1 {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+.books-subtitle {
+    font-size: 20px;
+
+    color: #555;
+
+    margin-bottom: 35px;
+}
+
+
+/* Search Box */
+
+.search-container {
+    display: flex;
+
+    width: 550px;
+
+    height: 55px;
+
+    background-color: white;
+
+    border: 2px solid #d6d6d6;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+}
+
+
+.search-container input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 25px;
+
+    font-size: 17px;
+
+    color: #2f3e35;
+}
+
+
+.search-container input::placeholder {
+    color: #999;
+}
+
+
+.search-container button {
+    width: 130px;
+
+    border: none;
+
+    background-color: #2f3e35;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.search-container button:hover {
+    background-color: #3d5145;
+}
+
+
+/* Book Result */
+
+#bookResult {
+    width: 550px;
+
+    margin-top: 30px;
+}
+
+
+.book-result-card {
+    background-color: white;
+
+    border: 2px solid #d6d6d6;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.book-result-card h2 {
+    color: #2f3e35;
+
+    margin-bottom: 15px;
+}
+
+
+.book-result-card p {
+    font-size: 17px;
+
+    color: #555;
+
+    margin: 8px 0;
+}
+
+
+.available {
+    color: #2f7d5b;
+
+    font-weight: bold;
+}
+
+
+.not-available {
+    color: #b34b4b;
+
+    font-weight: bold;
+}
